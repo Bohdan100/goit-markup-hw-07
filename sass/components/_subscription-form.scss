@@ -1,0 +1,48 @@
+.subscription {
+  &__label {
+    display: block;
+
+    margin-bottom: 20px;
+
+    @include font(14px, 700, calc(16 / 14), 0.03em);
+
+    text-transform: uppercase;
+
+    color: var(--first-background-color);
+
+    cursor: pointer;
+  }
+
+  &__container {
+    display: flex;
+    padding: 0;
+  }
+
+  &__input {
+    margin-right: 12px;
+
+    padding: 0px 16px 0px 16px;
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: #2f303a;
+
+    &::placeholder {
+      font-family: "Roboto";
+      font-style: normal;
+
+      @include font(16px, 400, calc(20 / 16), 0.03em);
+
+      display: flex;
+      align-items: center;
+
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}

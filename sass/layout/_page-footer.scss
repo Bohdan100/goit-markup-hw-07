@@ -1,0 +1,28 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+
+  &__contacts-container {
+    margin-right: 70px;
+  }
+
+  &__logo {
+    margin-right: 0;
+  }
+
+  &__network-container {
+    margin-right: 93px;
+  }
+
+  &__network-text {
+    margin-bottom: 20px;
+
+    @include font(14px, 700, calc(16 / 14), null);
+
+    text-transform: uppercase;
+
+    color: var(--first-background-color);
+  }
+}
